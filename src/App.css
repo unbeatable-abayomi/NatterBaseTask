@@ -1,22 +1,83 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image-details{
+  margin-bottom: 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: warp;
+}
+.images{
+  display: inline;
+  border-radius: 15px;
+  margin: 5px;
+  -webkit-box-shadow: 19px 21px 8px -14px rgba(214,203,214,1);
+  -moz-box-shadow: 19px 21px 8px -14px rgba(214,203,214,1);
+  box-shadow: 19px 21px 8px -14px rgba(214,203,214,1);
+}
+.name_date{
+  margin: 20px;
+}
+th{
+  color: #737373;
+  font-weight: 500;
+}
+.navbar-links{
+  margin-left: 6rem;
+  color: #737373;
+  font-weight: bold;
+  font-size: 15px;
+}
+.dashboard-text{
+  margin-left: 2rem;
+  font-weight: bold;
+  color: #240F00;
+  font-size: larger;
+}
+.logo_end{
+  margin-right: 3rem;
+
+}
+.info{
+  position: absolute;
+  top: 17rem;
+  left: 10rem;
+}
+.info_2{
+  position: absolute;
+  top: 17rem;
+  left: 27rem;
+}
+.info_3{
+  position: absolute;
+  top: 17rem;
+  left: 46rem;
+}
+.info_4{
+  position: absolute;
+  top: 17rem;
+  right: 9rem;
+  
+}
+.claim-button{
+  background: #F58634;
+color: #fff;
+width: 125px;
+height: 33px;
+padding-left:12px;
+padding-top:2.7px;
+margin-left: 10px;
 }
 
-.App-link {
-  color: #09d3ac;
+/* styles for accountsetting  */
+.vector-image{
+  display: inline;
+}
+/* input[type=file]{
+  border: none !important; */
+/* } */
+label{
+  display: block;
+}
+.fullname_username_DoB{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 }

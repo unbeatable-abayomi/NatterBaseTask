@@ -11,7 +11,6 @@ const DashBoard = (props) => {
 			<div className="container table-div">
 				<Table striped bordered hover responsive>
 					<thead>
-						
 						<tr>
 							<th colSpan="7">Insurance Application</th>
 						</tr>
@@ -21,7 +20,7 @@ const DashBoard = (props) => {
 							<th>Amount</th>
 							<th>Date</th>
 							<th>Status</th>
-							<th colSpan="2">Action</th>
+							<th>Action</th>
 							<th> </th>
 						</tr>
 					</thead>
@@ -32,9 +31,11 @@ const DashBoard = (props) => {
 							<td>Otto</td>
 							<td>@mdo</td>
 							<td>
-								<buton>completed</buton>
+								<i>completed</i>
 							</td>
-							<td>Make a Claim</td>
+							<td>
+								<p className="claim-button">Make a claim</p>
+							</td>
 							<td>More Action</td>
 						</tr>
 						<tr>
@@ -45,6 +46,9 @@ const DashBoard = (props) => {
 							<td>
 								<i>completed</i>
 							</td>
+							<td>
+								<p className="claim-button">Make a claim</p>
+							</td>
 						</tr>
 						<tr>
 							<td>3</td>
@@ -54,33 +58,35 @@ const DashBoard = (props) => {
 							<td>
 								<i>completed</i>
 							</td>
+							<td>
+								<p className="claim-button">Make a claim</p>
+							</td>
 						</tr>
 						<tr>
-							<td>3</td>
+							<td>4</td>
 							<td>Motor Insurance</td>
 							<td>Thornton</td>
 							<td>@fat</td>
 							<td>
 								<i>completed</i>
 							</td>
+							<td>
+								<p className="claim-button">Make a claim</p>
+							</td>
 						</tr>
 						<tr>
-							<td>4</td>
+							<td>5</td>
 							<td>Third Party Motor Insurance</td>
 							<td>Thornton</td>
 							<td>@fat</td>
 							<td>
 								<i>completed</i>
 							</td>
-						</tr>
-						<tr>
-							<td>5</td>
-							<td colSpan="2">Larry the Bird</td>
-							<td>@twitter</td>
 							<td>
-								<i>completed</i>
+								<p className="claim-button">Make a claim</p>
 							</td>
 						</tr>
+						
 					</tbody>
 				</Table>
 			</div>

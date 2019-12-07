@@ -22,22 +22,22 @@ const NavigationBar = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <Link to="/"> <img src={image1} className="logo" alt="logo" />DashBoard</Link>
+        <Link to="/"> <img src={image1} className="logo navbar-links" alt="logo"/><span className="dashboard-text">DashBoard</span></Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <Link to="/components/">Buy Insurance</Link>
+              <Link to="/components/" className="navbar-links">Buy Insurance</Link>
             </NavItem>
             <NavItem>
-              <Link to="/accountSetting">Account Setting</Link>
+              <Link to="/accountSetting" className="navbar-links">Account Setting</Link>
             </NavItem>
            
             
           </Nav>
           
           <NavLink href="/components/">
-          <img src={image2} className="logo" alt="logo" />
+          <img src={image2} className="logo_end" alt="logo" />
           </NavLink>
         
         </Collapse>
