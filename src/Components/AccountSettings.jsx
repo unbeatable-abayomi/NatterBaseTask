@@ -18,7 +18,7 @@ export default function AccountSettings() {
 						<p className="update_info">Use this page to update your contact information and change your password</p>
                         <img src={imageIcon2} alt="toDo" className="vector-image2" /> 
                         <div className="upload_image_div">
-                        <p className='upload_image_text'>Upload a new profile image</p>
+                        <p className='upload_image_text'> <a href="http">Upload a new profile image</a></p>
                         <p className='upload_image_text'>Maximum size allowed is 600kb of PNG,JPEG,JPG</p>
                         </div>
                         

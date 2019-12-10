@@ -19,8 +19,16 @@
   height: 250px;
   padding: 2px;
 }
+.incompleted{
+	background: rgb(240, 187, 200);
+  color: rgb(231, 43, 43);
+  width: 250px;
+  height: 250px;
+  padding: 2px;
+}
 .completed_dot{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-left: 5px;
 }
 .imagesOne {
 	width: 290px;
