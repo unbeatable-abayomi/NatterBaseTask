@@ -164,3 +164,32 @@ label {
 	width: 15rem;
 	background-color: rgb(241, 238, 235);
 }
+
+
+
+
+@media (max-width: 425px) {
+	.upload_image_div {
+		position: absolute;
+		top: 19rem;
+		left: 14rem;
+		width: 105px;
+	}
+}
+
+@media (max-width: 375px) {
+	.upload_image_div {
+		position: absolute;
+		top: 23rem;
+		left: 12rem;
+		width: 105px;
+	}
+	.input_tags{
+		width: 180px;
+	}
+	.save_changes{
+		width: 160px;
+	}
+}
+
+
