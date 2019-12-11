@@ -5,6 +5,7 @@ import NavigationBar from './Navbar';
 // import Details from './Details';
 import DetailsOne from './DetailsOne';
 import { connect } from 'react-redux';
+import  {fetchPosts} from '../actions/postActions';
 
 class DashBoard extends Component {
 	// 	state = {
@@ -19,9 +20,12 @@ class DashBoard extends Component {
 	//  })
 	// })
 	// 	}
-
+componentWillMount(){
+	this.props.fetchPosts();
+	console.log(this.props.posts);
+}
 	render() {
-		console.log(this.props);
+		console.log(this.props.posts);
 		// console.log(this.props.postsNew[0].text)
 		// const {posts} = this.props;
 		// console.log(posts)
@@ -134,9 +138,8 @@ class DashBoard extends Component {
 		);
 	}
 }
-const mapStateToProps = (state) => {
-	return {
-		postsNew: state
-	};
-};
-export default connect(mapStateToProps)(DashBoard);
+const mapStateToProps = (state) => ({
+		postsNew: state.posts.items
+	
+});
+export default connect(mapStateToProps, {fetchPosts})(DashBoard);
