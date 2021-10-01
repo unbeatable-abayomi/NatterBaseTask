@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
+import image1 from '../logo1.svg'
+import image2 from '../profile.png'
+
+
 import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
+  NavLink
 } from 'reactstrap';
+
 
 const NavigationBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,21 +22,23 @@ const NavigationBar = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <Link to="/"> <img src={image1} className="logo navbar-links" alt="logo"/><span className="dashboard-text">DashBoard</span></Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <Link to="/components/" className="navbar-links">Buy Insurance</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <Link to="/accountSetting" className="navbar-links">Account Setting</Link>
             </NavItem>
            
             
           </Nav>
           
-          <NavLink href="/components/"> New Components</NavLink>
+          <NavLink href="/components/">
+          <img src={image2} className="logo_end" alt="logo" />
+          </NavLink>
         
         </Collapse>
       </Navbar>

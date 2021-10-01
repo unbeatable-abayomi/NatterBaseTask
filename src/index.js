@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// import {Provider} from 'react-redux';
+// import rootReducer from './reducers/rootReducer'
+
+// const store = createStore(()=>[], {}, applyMiddleware());
+
 
 ReactDOM.render(<App />   , document.getElementById('root'));
 

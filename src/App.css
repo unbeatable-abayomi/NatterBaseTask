@@ -1,22 +1,195 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+.image-details {
+	margin-bottom: 2rem;
+	display: flex;
+	flex-wrap: warp;
+}
+/* .images{
+  display: inline;
+  border-radius: 15px;
+  margin: 5px;
+  -webkit-box-shadow: 19px 21px 8px -14px rgba(214,203,214,1);
+  -moz-box-shadow: 19px 21px 8px -14px rgba(214,203,214,1);
+  box-shadow: 19px 21px 8px -14px rgba(214,203,214,1);
+} */
+.completed{
+  background: rgb(174, 243, 174);
+  color: rgb(57, 185, 85);
+  width: 250px;
+  height: 250px;
+  padding: 2px;
+}
+.incompleted{
+	background: rgb(240, 187, 200);
+  color: rgb(231, 43, 43);
+  width: 250px;
+  height: 250px;
+  padding: 2px;
+}
+.completed_dot{
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
+.imagesOne {
+	width: 290px;
+	margin-bottom: 20px;
+}
+.name_date {
+	margin: 20px;
+}
+th {
+	color: #737373;
+	font-weight: 500;
+}
+.main_details {
+	display: none;
+}
+.navbar-links {
+	margin-left: 6rem;
+	color: #737373;
+	font-weight: bold;
+	font-size: 15px;
+}
+.dashboard-text {
+	margin-left: 2rem;
+	font-weight: bold;
+	color: #240f00;
+	font-size: larger;
+}
+.logo_end {
+	margin-right: 3rem;
+}
+.info {
+	position: absolute;
+	top: 17rem;
+	left: 10rem;
+}
+.info_2 {
+	position: absolute;
+	top: 17rem;
+	left: 27rem;
+}
+.info_3 {
+	position: absolute;
+	top: 17rem;
+	left: 46rem;
+}
+.info_4 {
+	position: absolute;
+	top: 17rem;
+	right: 9rem;
+}
+.claim-button {
+	background: #f58634;
+	color: #fff;
+	width: 125px;
+	height: 33px;
+	padding-left: 12px;
+	padding-top: 2.7px;
+	margin-left: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
+/* styles for accountsetting  */
+.account_setting_text {
+	margin-left: 3rem;
+	margin-top: 2rem;
+}
+.change_stateOfResidence,
+.fullname_username_DoB_main_div {
+	margin: 30px;
+	border-style: outset;
+	border-radius: 5px;
+	border: 1px solid rgba(214, 203, 214, 1);
+	-webkit-box-shadow: 19px 21px 8px -14px rgba(214, 203, 214, 1);
+	-moz-box-shadow: 19px 21px 8px -14px rgba(214, 203, 214, 1);
+	box-shadow: 19px 21px 8px -14px rgba(214, 203, 214, 1);
+	padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.vector-image {
+	display: inline;
+}
+.vector-image2 {
+	margin-bottom: 2rem;
+}
+.fullname_username_DoB {
+	margin-top: 1.3rem;
+}
+.email_address,
+.fullname_username_DoB,
+.current_state,
+.state_Details,
+.senetorial {
+	margin-bottom: 1rem;
+}
+.save_changes {
+	background: #f58634;
+	border-radius: 5px;
+	width: 220px;
+	height: 48px;
+  color: #ffffff;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: .3rem;
+  margin-bottom: .5rem;
+}
+label {
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	color: #4d0032;
+} 
+.change_of_state,
+.personal_info_text {
+	text-transform: uppercase;
+	display: inline;
+	color: #4d0032;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 12px;
+}
+.update_state_residence,
+.update_info {
+	color: #240f00;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 7px;
+	margin-left: 5px;
+}
+.upload_image_div {
+	position: absolute;
+	top: 18rem;
+	left: 19rem;
+}
+.input_tags {
+	width: 15rem;
+	background-color: rgb(241, 238, 235);
 }
 
-.App-link {
-  color: #09d3ac;
+
+
+
+@media (max-width: 425px) {
+	.upload_image_div {
+		position: absolute;
+		top: 19rem;
+		left: 14rem;
+		width: 105px;
+	}
 }
+
+@media (max-width: 375px) {
+	.upload_image_div {
+		position: absolute;
+		top: 23rem;
+		left: 12rem;
+		width: 105px;
+	}
+	.input_tags{
+		width: 180px;
+	}
+	.save_changes{
+		width: 160px;
+	}
+}
+
+
